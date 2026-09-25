@@ -3,41 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal website of Tymur Tkachenko">
+  <meta name="description" content="Personal homepage of Tymur Tkachenko">
   <title>Tymur Tkachenko</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container">
-      <a href="index.html" class="logo">Tymur Tkachenko</a>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <ul class="nav-links">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
+<div class="page">
 
-  <main class="container">
-    <section class="page-header">
-      <h1>Hi, I'm Tymur 👋</h1>
-      <p>I build things for the web and like figuring out how stuff works. This is where I share my projects and what I'm learning.</p>
-      <a href="projects.html" class="btn">See my projects</a>
-    </section>
-  </main>
+  <div class="header">
+    <h1>Tymur Tkachenko</h1>
+    <p class="subtitle">EE @ Georgia Tech &middot; SpaceX Starship RF Intern</p>
+    <p class="nav">
+      [ <span class="current">Home</span> |
+      <a href="experience.html">Experience</a> ]
+    </p>
+  </div>
 
-  <footer class="site-footer">
-    <div class="container">
-      <span>© <span id="year"></span> Tymur Tkachenko</span>
-      <a href="https://github.com/ty-tkachenko">GitHub</a>
-    </div>
-  </footer>
+  <hr>
 
-  <script src="js/main.js"></script>
+  <h2>About Me</h2>
+  <a href="images/launch-rail.jpg" class="portrait">
+    <img src="images/launch-rail-small.jpg" width="452" height="600"
+         alt="Tymur on a launch rail next to a rocket's nose section">
+  </a>
+  <p>
+    I am an electrical engineering student at the
+    <a href="https://www.gatech.edu/">Georgia Institute of Technology</a>,
+    currently interning on the Starship RF team at
+    <a href="https://www.spacex.com/">SpaceX</a> in Hawthorne, California.
+    My work is in avionics: flight computers, RF telemetry, and the
+    data-acquisition electronics that support launch vehicles and spacecraft.
+  </p>
+  <p>
+    At Georgia Tech I have spent three years with the Yellow Jacket Space
+    Program. As Director of Avionics I led the team behind the Vespula and
+    Felicette liquid rockets, which reached 56,000 ft and 47,000 ft, the two
+    highest flights by collegiate liquid rockets. I now advise the program.
+    I have also interned at Vast on Haven-1, at SpaceX Starbase on Starship
+    ground systems, and at Honeybee Robotics on NASA's Dragonfly mission.
+  </p>
+  <p>
+    More detail is on the <a href="experience.html">Experience</a> page.
+  </p>
+
+  <h2>Photos</h2>
+  <p class="note">Click a photo for the full-size version.</p>
+
+  <!-- Copy a <figure> block to add another photo -->
+  <div class="gallery">
+    <figure>
+      <a href="images/falcon9-hawthorne.jpg"><img src="images/falcon9-hawthorne-small.jpg" style="object-position: 50% 75%" width="450" height="600" alt="Tymur standing beneath a Falcon 9 booster"></a>
+      <figcaption>Under the Falcon 9 booster at SpaceX, Hawthorne, September 2026.</figcaption>
+    </figure>
+    <figure>
+      <a href="images/starbase-sunset.jpg"><img src="images/starbase-sunset-small.jpg" width="600" height="450" alt="Starship launch towers silhouetted at sunset"></a>
+      <figcaption>Starbase at sunset, March 2026.</figcaption>
+    </figure>
+    <figure>
+      <a href="images/starbase-chopsticks.jpg"><img src="images/starbase-chopsticks-small.jpg" style="object-position: 35% 50%" width="600" height="280" alt="Livestream frame with Tymur circled on the tower's QD arm"></a>
+      <figcaption>Up on the QD arm at Starbase, as seen on the NSF Starbase Live stream, March 2026.</figcaption>
+    </figure>
+    <figure>
+      <a href="images/avionics-night.jpg"><img src="images/avionics-night-small.jpg" width="450" height="600" alt="Rocket avionics bay glowing green at night"></a>
+      <figcaption>An avionics bay lit up at night, January 2026.</figcaption>
+    </figure>
+    <figure>
+      <a href="images/avionics-stack.jpg"><img src="images/avionics-stack-small.jpg" width="450" height="600" alt="Stack of avionics boards with GPS antennas and wiring"></a>
+      <figcaption>A flight avionics stack, April 2026.</figcaption>
+    </figure>
+    <figure>
+      <a href="images/launch-site.jpg"><img src="images/launch-site-small.jpg" style="object-position: 50% 35%" width="324" height="600" alt="Tymur working on an avionics bay on the launch rail"></a>
+      <figcaption>Working on the avionics bay at the launch site.</figcaption>
+    </figure>
+    <figure>
+      <a href="images/battery-packs.jpg"><img src="images/battery-packs.jpg" style="object-position: 50% 35%" width="1084" height="1457" alt="Tymur spot-welding a battery pack at a workbench"></a>
+      <figcaption>Spot-welding a battery pack.</figcaption>
+    </figure>
+  </div>
+
+  <h2>Links</h2>
+  <ul class="contact">
+    <li>GitHub: <a href="https://github.com/ty-tkachenko">github.com/ty-tkachenko</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/tymur-t/">linkedin.com/in/tymur-t</a></li>
+    <li>Instagram: <a href="https://www.instagram.com/ty.tkachenko/">instagram.com/ty.tkachenko</a></li>
+  </ul>
+
+  <hr>
+
+  <p class="footer">Last modified: September 2026</p>
+
+</div>
 </body>
 </html>
